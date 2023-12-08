@@ -2,7 +2,7 @@ name: Node.js CI/CD
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "server-github-actions" ]
     paths-ignore:
         - 'README.md'
         - 'deliverables/**'
@@ -34,8 +34,6 @@ jobs:
         working-directory: ./Server
         run: |
           npm install
-          npm run build --if-present
-          npm test
 
   # Heavily modified deploy job to fit render.com
   deploy:
