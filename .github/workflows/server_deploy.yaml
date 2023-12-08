@@ -34,6 +34,8 @@ jobs:
         working-directory: ./Server
         run: |
           npm install
+          ls -l node_modules/.bin            
+          npm test
 
   # Heavily modified deploy job to fit render.com
   deploy:
