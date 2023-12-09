@@ -98,7 +98,7 @@ Frontend (Unity) deployment
 	- To switch to a personal account, navigate to GitHub secrets and add a secret UNITY_License with your licence information. Update env and test, build commands in unity_build.yml accordingly. 
 	- See [Game-CI website](https://game.ci/docs/github/activation) for more support.
 
-Backend (Derver) deployment:
+Backend (Server) deployment:
 - Github action file: server_deploy.yaml
 - Server is currently deplyed on Render under the team's account (account information is shared with the organiztion). The name of the web service is: unity-game-server. Developer can login to Render with the team's account to view server logs, change github account and repository linked to this web service in settings.
 	- Currently Render connects to an GitHub repository for build and deploy, future developer can change the linked github repo and and account:
